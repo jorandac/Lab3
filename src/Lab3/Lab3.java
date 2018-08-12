@@ -12,7 +12,7 @@ public class Lab3 {
 	
 		do { 
 	
-			System.out.println("Enter a number between 1 and 100");
+		  System.out.println("Enter a number between 1 and 100");
           int num = scnr.nextInt(); // Scanner to ask for user input 	
         
           
@@ -24,11 +24,11 @@ public class Lab3 {
         	  System.out.println("Even");
           } 
           
-          else if (num % 2 == 0 && num < 60) {  //If user inputs even number greater than 60
+          else if (num % 2 == 0 && num > 60) {  //If user inputs even number greater than 60
               System.out.println(num  +  " Even");
           } 
           
-          else if (num < 60) {   //If user inputs odd number greater than 60
+          else if (num > 60) {   //If user inputs odd number greater than 60
               System.out.println(num +  " Odd and over 60");
           } 
           
@@ -37,13 +37,12 @@ public class Lab3 {
           }
           System.out.println();    
           System.out.println("Continue? Y/N "); 
-          Answer = reader.next().charAt(0); //(chatAt) Taking character input from scanner  
+          Answer = reader.next().charAt(0); //(charAt) Taking character input from scanner  
 		}
 		while (Answer == 'y');  //If user input is equal to y
 		}
 }
 
-//Do while loop to continue program based on user input of y
 
 
          
